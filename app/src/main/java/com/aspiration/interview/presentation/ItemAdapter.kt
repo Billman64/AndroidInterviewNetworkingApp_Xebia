@@ -1,4 +1,4 @@
-package com.aspiration.interview.presentation.base
+package com.aspiration.interview.presentation
 
 import android.view.LayoutInflater
 import android.view.View
@@ -17,12 +17,12 @@ class ItemAdapter(private var mediaList:List<LatinMediaItem>): RecyclerView.Adap
         val userIdView = itemView.findViewById<TextView>(R.id.userid_textview)
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemAdapter.ItemViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemViewHolder {
         val itemView = LayoutInflater.from(parent.context).inflate(R.layout.item_layout,parent,false)
         return ItemViewHolder(itemView)
     }
 
-    override fun onBindViewHolder(holder: ItemAdapter.ItemViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
         val currentItem = mediaList[position]
 
         holder.idView.text = currentItem.id.toString()

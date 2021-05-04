@@ -7,4 +7,5 @@ import javax.inject.Inject
 class MainPresenter @Inject constructor(private val useCase: InterviewTaskUseCaseInterface) :
     BasePresenterImpl<MainAgreement.View>(), MainAgreement.Presenter {
     // TODO implement your methods for fetching here
+
 }

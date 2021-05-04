@@ -10,5 +10,7 @@ interface MainAgreement {
 
     interface Presenter : BasePresenter<View> {
         // TODO set API request (usecase) methods invocation
+
+
     }
 }
