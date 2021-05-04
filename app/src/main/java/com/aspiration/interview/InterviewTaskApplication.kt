@@ -12,7 +12,7 @@ class InterviewTaskApplication: Application() {
 
         applicationComponent = DaggerApplicationComponent.builder()
             .applicationModule(ApplicationModule(this))
-            .networkingModule(NetworkingModule("ADD YOUR API URL HERE"))
+            .networkingModule(NetworkingModule("https://jsonplaceholder.typicode.com/"))
             .build()
     }
 

@@ -19,14 +19,14 @@ class MainActivity :
     MainAgreement.View {
 
     override fun setupInputs() {
-        InterviewTaskApplication.applicationComponent?.inject(this)
+        InterviewTaskApplication.applicationComponent?.inject(this)   //crashes here???
 
         // TODO add your click listeners here
         this.findViewById<Button>(R.id.btnFetch).setOnClickListener {
 
 
 
-            Toast.makeText(this, "testing", Toast.LENGTH_SHORT)
+//            Toast.makeText(this, "testing", Toast.LENGTH_SHORT).show()
         }
     }
 
